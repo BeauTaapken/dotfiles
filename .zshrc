@@ -144,8 +144,10 @@ alias randomanime='python /home/beau/Downloads/malptw_rand.py /home/beau/Downloa
 alias randomanimefolder='ls /mnt/Anime/ |sort -R | head -1 | tail -1 |while read file; do dolphin /mnt/Anime/$file; done'
 alias displayfix='xrandr --output DP-4 --mode 3440x1440 --rate 144.00 --pos 1920x560 --primary --output DP-2 --mode 2560x1080 --rate 75.00 --pos 5360x0 --rotate right --output DP-1 --mode 1920x1080 --pos 0x838'
 
-alias anime='/mnt/Anime/'
+alias jellyfinup='docker compose -f /mnt/1tb-hdd/server/server-config/docker-compose.yml up &; disown'
+alias jellyfindown='docker compose -f /mnt/1tb-hdd/server/server-config/docker-compose.yml down'
 alias unreal='/home/beau/UnrealEngine4/Engine/Binaries/Linux/UE4Editor &; disown'
+alias generateunreal='/home/beau/UnrealEngine4/GenerateProjectFiles.sh ./*.uproject -game -engine'
 
 alias disablesmt='echo off | sudo tee /sys/devices/system/cpu/smt/control'
 alias enablesmt='echo on | sudo tee /sys/devices/system/cpu/smt/control'
@@ -156,3 +158,4 @@ alias steam='LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/cr
 alias cleansteam='sudo /mnt/crucial-ssd/zShaderCacheKiller.sh'
 
 alias pak='/mnt/crucial-ssd/u4pak.py'
+
