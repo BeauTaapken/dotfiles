@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+. ~/.config/aliasrc
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -83,6 +84,9 @@ export NVD_BACKEND="direct"
 export MOZ_DISABLE_RDD_SANDBOX="1"
 export LIBVA_DRIVER_NAME="nvidia"
 
+export LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit_64.so"
+export SDL_VIDEO_ALLOW_SCREENSAVER=1
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -104,58 +108,3 @@ export LIBVA_DRIVER_NAME="nvidia"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
-# make the "make" command always use all possible threads on cpu
-alias make='make -j$(nproc)'
-
-alias gfp='git fetch && git pull'
-alias ga='git add'
-alias gaa='git add .'
-alias gc='git commit -m'
-alias gsd='git switch develop'
-alias gs='git switch'
-alias gfa='git fetch --all --prune'
-alias gd='git diff'
-alias gp='git push'
-alias gsc='git switch -c'
-
-alias yayi='yay -S'
-alias yayu='yay -Syu'
-alias yayr='yay -Rns'
-alias yayclean='yay -Yc'
-alias pacmandb='sudo pacman -Syu'
-
-alias anid='ani-cli -d -r 1-99999'
-alias anidr='ani-cli -d -r'
-alias aniu='sudo ani-cli -U'
-
-alias nanozsh='nano ~/.zshrc'
-
-alias mdlc='/mnt/wd-black/Luigis_mansion_rip/MDLConverter/ModelConverter.exe'
-
-alias san='electron /mnt/crucial-ssd/notifier/SteamAchievementNotifier/main.js &; disown'
-alias primary='/home/beau/Desktop/primary.sh'
-alias kwinclear='kwin_x11 --replace &; disown'
-alias plasmaclear='killall plasmashell && kstart5 plasmashell &; disown'
-
-alias randomanime='python /home/beau/Downloads/malptw_rand.py /home/beau/Downloads/animelist.xml'
-alias randomanimefolder='ls /mnt/Anime/ |sort -R | head -1 | tail -1 |while read file; do dolphin /mnt/Anime/$file; done'
-alias displayfix='xrandr --output DP-4 --mode 3440x1440 --rate 144.00 --pos 1920x560 --primary --output DP-2 --mode 2560x1080 --rate 75.00 --pos 5360x0 --rotate right --output DP-1 --mode 1920x1080 --pos 0x838'
-
-alias jellyfinup='docker compose -f /mnt/1tb-hdd/server/server-config/docker-compose.yml up &; disown'
-alias jellyfindown='docker compose -f /mnt/1tb-hdd/server/server-config/docker-compose.yml down'
-alias unreal='/home/beau/UnrealEngine4/Engine/Binaries/Linux/UE4Editor &; disown'
-alias generateunreal='/home/beau/UnrealEngine4/GenerateProjectFiles.sh ./*.uproject -game -engine'
-
-alias disablesmt='echo off | sudo tee /sys/devices/system/cpu/smt/control'
-alias enablesmt='echo on | sudo tee /sys/devices/system/cpu/smt/control'
-alias checksmt='cat /sys/devices/system/cpu/smt/active'
-alias ssdhealth='sudo smartctl -a /dev/nvme0'
-
-alias steam='LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 steam &; disown'
-alias cleansteam='sudo /mnt/crucial-ssd/zShaderCacheKiller.sh'
-
-alias pak='/mnt/crucial-ssd/u4pak.py'
-
