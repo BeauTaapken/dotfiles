@@ -80,11 +80,11 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export STEAM_COMPAT_CLIENT_INSTALL_PATH="$HOME/.local/share/Steam"
-export NVD_BACKEND="direct"
+# export NVD_BACKEND="direct"
 export MOZ_DISABLE_RDD_SANDBOX="1"
 export LIBVA_DRIVER_NAME="nvidia"
 
-export LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit_64.so"
+#export LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit_64.so"
 export SDL_VIDEO_ALLOW_SCREENSAVER=1
 
 # You may need to manually set your language environment
