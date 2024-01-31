@@ -54,7 +54,6 @@ alias cleansteam='sudo /mnt/crucial-ssd/zShaderCacheKiller.sh'
 alias pak='/mnt/crucial-ssd/u4pak.py'
 
 alias editsteam='kate /usr/lib/steam/bin_steam.sh'
-alias livetranslation='source "/home/beau/Downloads/Synthalingua-1.0.9995/data_whisper/bin/activate" && python3.10 "/home/beau/Downloads/Synthalingua-1.0.9995/transcribe_audio.py"'
 
 alias translate='wine ~/.wine/drive_c/users/beau/AppData/Local/Programs/Screen\ Translate/ScreenTranslate.exe'
 alias idlecheat='STEAM_COMPAT_DATA_PATH="/mnt/970-evo/SteamLibrary/steamapps/compatdata/627690" WINEPREFIX=$PWD "/home/beau/.steam/steam/steamapps/common/Proton - Experimental/proton" run /opt/cheat-engine-zh/Cheat\ Engine.exe'
