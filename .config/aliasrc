@@ -25,11 +25,12 @@ alias anidr='ani-cli -d -r'
 alias aniu='sudo ani-cli -U'
 
 alias nanozsh='nano ~/.zshrc'
+alias nanoalias='nano ~/.config/aliasrc'
 
 alias mdlc='/mnt/wd-black/Luigis_mansion_rip/MDLConverter/ModelConverter.exe'
 
 alias san='electron /mnt/crucial-ssd/notifier/SteamAchievementNotifier/main.js &; disown'
-alias primary='/home/beau/Desktop/primary.sh'
+alias primary='/mnt/crucial-ssd/shell-scripts/primary.sh'
 alias kwinclear='kwin_x11 --replace &; disown'
 alias plasmaclear='killall plasmashell && kstart5 plasmashell &; disown'
 
@@ -49,7 +50,7 @@ alias ssdhealth='sudo smartctl -a /dev/nvme0'
 
 #alias steam='LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 steam &; disown'
 #alias steam='LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit_64.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 steam &; disown'
-alias cleansteam='sudo /mnt/crucial-ssd/zShaderCacheKiller.sh'
+alias cleansteam='sudo /mnt/crucial-ssd/shell-scripts/zShaderCacheKiller.sh'
 
 alias pak='/mnt/crucial-ssd/u4pak.py'
 

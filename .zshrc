@@ -79,9 +79,9 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-export EDITOR=code
+export EDITOR=nano
 export STEAM_COMPAT_CLIENT_INSTALL_PATH="$HOME/.local/share/Steam"
-# export NVD_BACKEND="direct"
+export NVD_BACKEND="direct"
 export MOZ_DISABLE_RDD_SANDBOX="1"
 export LIBVA_DRIVER_NAME="nvidia"
 
