@@ -68,6 +68,7 @@ alias idlecheat='STEAM_COMPAT_DATA_PATH="/mnt/970-evo/SteamLibrary/steamapps/com
 # Unreal
 alias unreal='LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit_64.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 ~/UnrealEngine4/Engine/Binaries/Linux/UE4Editor &; disown'
 alias generateunreal='~/UnrealEngine4/GenerateProjectFiles.sh $PWD/*.uproject -game -engine'
+alias cleanproject='~/UnrealEngine4/Engine/Binaries/Linux/UE4Editor-Cmd $PWD/*.uproject -run=WrangleContent -allmaps'
 
 # Unreal modding
 alias pak='/mnt/crucial-ssd/u4pak.py'
