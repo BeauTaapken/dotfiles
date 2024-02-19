@@ -1,0 +1,13 @@
+hyprland
+waybar
+xorg-xhost
+blueberry
+swayidle
+wofi
+swaync
+hyprshot
+hyprpaper
+hypridle-git
+hyprlock-git
+xdg-desktop-portal-hyprland
+aylurs-gtk-shell
