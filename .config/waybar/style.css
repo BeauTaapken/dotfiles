@@ -434,4 +434,14 @@ window#waybar.empty #window {
     -gtk-icon-effect: highlight;
 }
 
+/* -----------------------------------------------------
+ * Swaync
+ * ----------------------------------------------------- */
+
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
+  font-size: 16px;
+  margin-right:15px;
+}
+
 
