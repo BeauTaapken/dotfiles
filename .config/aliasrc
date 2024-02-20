@@ -55,7 +55,7 @@ alias checksmt='cat /sys/devices/system/cpu/smt/active'
 
 # Random anime stuff
 alias randomanime='python ~/Downloads/malptw_rand.py ~/Downloads/animelist.xml'
-alias randomanimefolder='ls /mnt/Anime/ |sort -R | head -1 | tail -1 |while read file; do dolphin /mnt/Anime/$file; done'
+alias randomanimefolder='ls /mnt/1tb-hdd/server/Anime/ |sort -R | head -1 | tail -1 |while read file; do dolphin /mnt/1tb-hdd/server/Anime/$file; done'
 alias displayfix='xrandr --output DP-4 --mode 3440x1440 --rate 144.00 --pos 1920x560 --primary --output DP-2 --mode 2560x1080 --rate 75.00 --pos 5360x0 --rotate right --output DP-1 --mode 1920x1080 --pos 0x838'
 
 # steam aliases
