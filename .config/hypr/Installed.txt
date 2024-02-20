@@ -13,5 +13,6 @@ xdg-desktop-portal-hyprland
 aylurs-gtk-shell
 hyprload
 nm-connection-editor
+wlogout
 
 gnome-bluetooth-3.0 (why ags)
