@@ -1,0 +1,7 @@
+mode=drun
+colors=colors
+allow_markup=true
+halign=fill
+orientation=vertical
+content_halign=fill
+drun-display_generic=true
