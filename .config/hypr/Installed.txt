@@ -1,7 +1,7 @@
 hyprland
 waybar
 xorg-xhost
-blueberry
+blueman
 swayidle
 wofi
 swaync
@@ -15,4 +15,4 @@ hyprload
 nm-connection-editor
 wlogout
 
-gnome-bluetooth-3.0 (why ags)
+installed https://github.com/Duckonaut/split-monitor-workspaces via hyprpm
