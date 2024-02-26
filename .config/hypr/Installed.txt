@@ -5,13 +5,12 @@ blueman
 swayidle
 wofi
 swaync
-hyprshot
-hyprpaper
+hyprshot-git
+hyprpaper-git
 hypridle-git
 hyprlock-git
 xdg-desktop-portal-hyprland
 aylurs-gtk-shell
-hyprload
 nm-connection-editor
 wlogout
 
