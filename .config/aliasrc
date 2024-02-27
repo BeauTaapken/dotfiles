@@ -75,7 +75,5 @@ alias cleanproject='~/UnrealEngine4/Engine/Binaries/Linux/UE4Editor-Cmd $PWD/*.u
 alias pak='/mnt/crucial-ssd/u4pak.py'
 
 # Yay
-alias yayi='yay -S'
-alias yayu='yay -Syu'
-alias yayr='yay -Rns'
+alias yayr='yay -Runs'
 alias yayclean='yay -Yc'
