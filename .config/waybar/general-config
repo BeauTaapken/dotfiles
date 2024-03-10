@@ -116,7 +116,6 @@
         "modules": [
             "custom/browser",
             "custom/filemanager",
-            "custom/steam",
         ]
     },
 

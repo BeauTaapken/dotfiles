@@ -24,8 +24,6 @@
 
         // Modules Left
         "modules-left": [
-            // "custom/appmenu",
-            "group/settings",
             // START TASK TOOGLE
             "wlr/taskbar",
             // END TASK TOOGLE
@@ -87,13 +85,7 @@
 
         // Modules Left
         "modules-left": [
-            // "custom/appmenu",
-            // "group/settings",
-            // START TASK TOOGLE
             "wlr/taskbar"
-            // END TASK TOOGLE
-            // "group/quicklinks",
-            // "hyprland/window"
         ],
 
         // Modules Center
@@ -147,11 +139,10 @@
 
         // Modules Left
         "modules-left": [
-            "group/settings",
             // START TASK TOOGLE
             "wlr/taskbar",
             // END TASK TOOGLE
-            "group/quicklinks"
+            "custom/steam"
         ],
 
         // Modules Center
@@ -161,7 +152,6 @@
 
         // Modules Right
         "modules-right": [
-            //"custom/updates",
             "pulseaudio",
             "clock"
         ]
