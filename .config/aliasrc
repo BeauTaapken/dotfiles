@@ -74,6 +74,9 @@ alias cleanproject='~/UnrealEngine4/Engine/Binaries/Linux/UE4Editor-Cmd $PWD/*.u
 # Unreal modding
 alias pak='/mnt/crucial-ssd/u4pak.py'
 
+# Update hyprland
+alias updatehypr='yay -Syu hyprcursor-git hypridle-git hyprland-git hyprlang-git hyprlock-git hyprpaper-git hyprshot-git xdg-desktop-portal-hyprland-git'
+
 # Yay
 alias yayr='yay -Runs'
 alias yayclean='yay -Yc'
