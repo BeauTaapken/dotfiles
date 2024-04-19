@@ -66,6 +66,9 @@ alias editsteam='kate /usr/lib/steam/bin_steam.sh'
 alias idlecheat='STEAM_COMPAT_DATA_PATH="/mnt/970-evo/SteamLibrary/steamapps/compatdata/627690" WINEPREFIX=$PWD "/home/beau/.steam/steam/steamapps/common/Proton - Experimental/proton" run /opt/cheat-engine-zh/Cheat\ Engine.exe'
 alias fixfps='mpv ~/Downloads/FixFps.mp4 --loop --mute=yes &; disown'
 
+# Steam achievement notifier
+alias san='~/Downloads/san.AppImage &; disown'
+
 # Unreal
 alias unreal='LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit_64.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 ~/UnrealEngine4/Engine/Binaries/Linux/UE4Editor &; disown'
 alias generateunreal='~/UnrealEngine4/GenerateProjectFiles.sh $PWD/*.uproject -game -engine'
