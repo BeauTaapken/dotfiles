@@ -48,6 +48,9 @@ alias rustrover='~/.local/share/JetBrains/Toolbox/apps/rustrover/bin/rustrover.s
 # Modelconverter
 alias mdlc='/mnt/wd-black/Luigis_mansion_rip/MDLConverter/ModelConverter.exe'
 
+# MPV
+alias mpv='mpv --save-position-on-quit'
+
 # Multithreading
 alias disablesmt='echo off | sudo tee /sys/devices/system/cpu/smt/control'
 alias enablesmt='echo on | sudo tee /sys/devices/system/cpu/smt/control'
