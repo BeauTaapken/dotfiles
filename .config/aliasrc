@@ -16,9 +16,9 @@ alias ssdhealth='sudo smartctl -a /dev/nvme0'
 alias jellyfinup='docker compose -f /mnt/crucial-ssd/Server/docker-compose.yml up &; disown'
 alias jellyfindown='docker compose -f /mnt/crucial-ssd/Server/docker-compose.yml down'
 
-# Easy nano editing
-alias nanozsh='nano ~/.zshrc'
-alias nanoalias='nano ~/.config/aliasrc'
+# Easy nvim editing
+alias editzsh='nvim ~/.zshrc'
+alias editalias='nvim ~/.config/aliasrc'
 
 # Fixes for some random breaking issues on kde
 alias primary='/mnt/crucial-ssd/shell-scripts/primary.sh'
@@ -36,6 +36,9 @@ alias gfa='git fetch --all --prune'
 alias gd='git diff'
 alias gp='git push'
 alias gsc='git switch -c'
+
+# Handmade Hero
+alias handmadeHero='cd /mnt/crucial-ssd/Handmade-Hero/'
 
 # IDE
 alias clion='~/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/clion.sh'
@@ -62,10 +65,8 @@ alias randomanimefolder='ls /mnt/1tb-hdd/server/Anime/ |sort -R | head -1 | tail
 alias displayfix='xrandr --output DP-4 --mode 3440x1440 --rate 144.00 --pos 1920x560 --primary --output DP-2 --mode 2560x1080 --rate 75.00 --pos 5360x0 --rotate right --output DP-1 --mode 1920x1080 --pos 0x838'
 
 # steam aliases
-#alias steam='LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 steam &; disown'
-#alias steam='LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit_64.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 steam &; disown'
 alias cleansteam='sudo /mnt/crucial-ssd/shell-scripts/zShaderCacheKiller.sh'
-alias editsteam='kate /usr/lib/steam/bin_steam.sh'
+alias editsteam='nvim /usr/lib/steam/bin_steam.sh'
 alias idlecheat='STEAM_COMPAT_DATA_PATH="/mnt/970-evo/SteamLibrary/steamapps/compatdata/627690" WINEPREFIX=$PWD "/home/beau/.steam/steam/steamapps/common/Proton - Experimental/proton" run /opt/cheat-engine-zh/Cheat\ Engine.exe'
 alias fixfps='mpv ~/Downloads/FixFps.mp4 --loop --mute=yes &; disown'
 
@@ -73,15 +74,12 @@ alias fixfps='mpv ~/Downloads/FixFps.mp4 --loop --mute=yes &; disown'
 alias san='~/Downloads/san.AppImage &; disown'
 
 # Unreal
-alias unreal='LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit_64.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 ~/UnrealEngine4/Engine/Binaries/Linux/UE4Editor &; disown'
+alias unreal='~/UnrealEngine4/Engine/Binaries/Linux/UE4Editor &; disown'
 alias generateunreal='~/UnrealEngine4/GenerateProjectFiles.sh $PWD/*.uproject -game -engine'
 alias cleanproject='~/UnrealEngine4/Engine/Binaries/Linux/UE4Editor-Cmd $PWD/*.uproject -run=WrangleContent -allmaps'
 
 # Unreal modding
 alias pak='/mnt/crucial-ssd/u4pak.py'
-
-# Update hyprland
-alias updatehypr='yay -Syu hyprcursor-git hypridle-git hyprland-git hyprlang-git hyprlock-git hyprpaper-git hyprshot-git xdg-desktop-portal-hyprland-git'
 
 # Yay
 alias yayr='yay -Runs'
