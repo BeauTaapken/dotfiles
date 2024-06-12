@@ -2,3 +2,6 @@
 	path = .config/nvim
 	url = git@github.com:BeauTaapken/kickstart.nvim.git
 	branch = master
+[submodule ".config/kickstart.nvim"]
+	path = .config/kickstart.nvim
+	url = git@github.com:BeauTaapken/kickstart.nvim.git
