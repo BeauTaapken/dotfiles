@@ -62,6 +62,8 @@ alias checksmt='cat /sys/devices/system/cpu/smt/active'
 # Random anime stuff
 alias randomanime='python ~/Downloads/malptw_rand.py ~/Downloads/animelist.xml'
 alias randomanimefolder='ls /mnt/1tb-hdd/server/Anime/ |sort -R | head -1 | tail -1 |while read file; do dolphin /mnt/1tb-hdd/server/Anime/$file; done'
+
+# Backup displayfix if  ever needed, probably won't ever be needed now that i'm on wayland though
 alias displayfix='xrandr --output DP-4 --mode 3440x1440 --rate 144.00 --pos 1920x560 --primary --output DP-2 --mode 2560x1080 --rate 75.00 --pos 5360x0 --rotate right --output DP-1 --mode 1920x1080 --pos 0x838'
 
 # steam aliases
@@ -71,7 +73,7 @@ alias idlecheat='STEAM_COMPAT_DATA_PATH="/mnt/970-evo/SteamLibrary/steamapps/com
 alias fixfps='mpv ~/Downloads/FixFps.mp4 --loop --mute=yes &; disown'
 
 # Steam achievement notifier
-alias san='~/Downloads/san.AppImage &; disown'
+alias san='/mnt/crucial-ssd/SAN/san.AppImage &; disown'
 
 # Unreal
 alias unreal='~/UnrealEngine4/Engine/Binaries/Linux/UE4Editor &; disown'
