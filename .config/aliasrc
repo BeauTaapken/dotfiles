@@ -25,6 +25,9 @@ alias primary='/mnt/crucial-ssd/shell-scripts/primary.sh'
 alias kwinclear='kwin_x11 --replace &; disown'
 alias plasmaclear='killall plasmashell && kstart5 plasmashell &; disown'
 
+# GiantFox
+alias vpnGF='sudo openvpn --config "/home/beau/Documents/Giant fox/VPN/GiantFox_beau_giantdevs.ovpn"'
+
 # Git
 alias gfp='git fetch && git pull'
 alias ga='git add'
