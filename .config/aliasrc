@@ -26,7 +26,7 @@ alias kwinclear='kwin_x11 --replace &; disown'
 alias plasmaclear='killall plasmashell && kstart5 plasmashell &; disown'
 
 # GiantFox
-alias vpnGF='sudo openvpn --config "/home/beau/Documents/Giant fox/VPN/GiantFox_beau_giantdevs.ovpn"'
+alias vpnGF='sudo openvpn --config "/mnt/crucial-ssd/Giant-Fox/Documents/VPN/GiantFox_beau_giantdevs.ovpn"'
 
 # Git
 alias gfp='git fetch && git pull'
