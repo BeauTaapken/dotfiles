@@ -73,7 +73,6 @@ alias displayfix='xrandr --output DP-4 --mode 3440x1440 --rate 144.00 --pos 1920
 alias cleansteam='sudo /mnt/crucial-ssd/shell-scripts/zShaderCacheKiller.sh'
 alias editsteam='nvim /usr/lib/steam/bin_steam.sh'
 alias idlecheat='STEAM_COMPAT_DATA_PATH="/mnt/970-evo/SteamLibrary/steamapps/compatdata/627690" WINEPREFIX=$PWD "/home/beau/.steam/steam/steamapps/common/Proton - Experimental/proton" run /opt/cheat-engine-zh/Cheat\ Engine.exe'
-alias fixfps='mpv ~/Downloads/FixFps.mp4 --loop --mute=yes &; disown'
 
 # Steam achievement notifier
 alias san='/mnt/crucial-ssd/SAN/san.AppImage &; disown'
