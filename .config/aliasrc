@@ -27,6 +27,7 @@ alias plasmaclear='killall plasmashell && kstart5 plasmashell &; disown'
 
 # GiantFox
 alias vpnGF='sudo openvpn --config "/mnt/crucial-ssd/Giant-Fox/Documents/VPN/GiantFox_beau_giantdevs.ovpn"'
+alias sshGitlab='ssh 167.172.38.242'
 
 # Git
 alias gfp='git fetch && git pull'
