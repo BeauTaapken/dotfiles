@@ -18,7 +18,7 @@
 /* -----------------------------------------------------
  * General
  * ----------------------------------------------------- */
-
+@import 'colors.css';
 * {
     font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     border: none;
@@ -79,14 +79,10 @@ window#waybar {
  * ----------------------------------------------------- */
 
 tooltip {
-    background-color: @backgroundlight;
-    opacity:0.8;
-    padding:20px;
-    margin:0px;
-}
-
-tooltip label {
-    color: @textcolor2;
+    background: @background;
+    border: 1.5px solid @color5;
+	border-radius: 8px;
+    padding: 2px 100px;
 }
 
 /* -----------------------------------------------------
@@ -118,7 +114,6 @@ window#waybar.empty #window {
     font-weight: normal;
     font-style: normal;
     opacity:0.8;
-    border: 2px solid @backgroundlight;
 }
 
 #taskbar button {
@@ -142,60 +137,52 @@ window#waybar.empty #window {
  * Custom Quicklinks
  * ----------------------------------------------------- */
 
-#custom-brave,
-#custom-browser,
-#custom-steam,
-#custom-keybindings,
-#custom-outlook,
-#custom-filemanager,
-#custom-teams,
-#custom-chatgpt,
-#custom-calculator,
-#custom-windowsvm,
-#custom-cliphist,
-#custom-wallpaper,
-#custom-settings,
-#custom-wallpaper,
-#custom-system,
-#custom-waybarthemes {
-    margin-right: 23px;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0.8;
-    color: @iconcolor;
+#image,
+#mpd *,
+#taskbar *,
+#quicklinks-right *,
+#quicklinks-left * {
+    border-radius: 8px;
+    color: @foreground;
 }
 
-#custom-system {
-    margin-right:15px;
-}
-
-#custom-wallpaper {
-    margin-right:25px;
-}
-
-#custom-waybarthemes, #custom-settings {
-    margin-right:20px;
+#clock,
+#hardware,
+#network,
+#workspaces,
+#pulseaudio,
+#taskbar,
+#quicklinks-right,
+#quicklinks-left {
+    color: @foreground;
+    border-radius: 10px;
+    background: @background;
+    padding: 3px 7px;
+    opacity: 0.9;
 }
 
 /* -----------------------------------------------------
- * Idle Inhibator
+ * Quicklinks
  * ----------------------------------------------------- */
-
-#idle_inhibitor {
-    margin-right: 15px;
-    font-size: 22px;
-    font-weight: bold;
-    opacity: 0.8;
-    color: @iconcolor;
+/*#quicklinks-right,
+#quicklinks-left {
+    background: @color1;
+}*/
+#quicklinks-right {
+    margin-right: 7px;
 }
-
-#idle_inhibitor.activated {
-    margin-right: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0.8;
-    color: #dc2f2f;
+#quicklinks-left {
+    margin-left: 7px;
 }
+#quicklinks-right *,
+#quicklinks-left * {
+    padding: 0px 5px;
+	transition: all 0.2s ease-in-out;
+}
+/* #quicklinks-right *:hover,
+#quicklinks-left *:hover {
+    background: @color11;
+} */
 
 /* -----------------------------------------------------
  * Custom Modules
@@ -226,12 +213,12 @@ window#waybar.empty #window {
  * Hardware Group
  * ----------------------------------------------------- */
 
-#disk,#memory,#cpu,#language,#custom-gpu {
+/* #disk,#memory,#cpu,#language,#custom-gpu {
     margin:0px;
     padding:0px;
     font-size:16px;
     color:@iconcolor;
-}
+} */
 
 #language {
     margin-right:10px;
@@ -242,13 +229,11 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #clock {
-    background-color: @backgrounddark;
     font-size: 16px;
     color: @textcolor1;
     padding: 1px 10px 0px 10px;
     margin: 3px 5px 3px 0px;
     opacity:0.8;
-    border: 2px solid @bordercolor;
 }
 
 /* -----------------------------------------------------

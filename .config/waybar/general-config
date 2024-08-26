@@ -1,14 +1,4 @@
 {
-    // Wofi Application Launcher
-    "custom/appmenu": {
-        // START APPS LABEL
-        "format": "Apps",
-        // END APPS LABEL
-
-        "on-click": "wofi --show drun",
-        "tooltip": false
-    },
-
     "hyprland/workspaces" : {
         "on-click": "activate",
         "active-only": false,
@@ -33,21 +23,31 @@
         "ignore-list": [
         "Alacritty"
         ],
-        "app_ids-mapping": {
-            "firefoxdeveloperedition": "firefox-developer-edition"
-        },
         "rewrite": {
             "Firefox Web Browser": "Firefox",
             "Foot Server": "Terminal"
         }
     },
 
+	// Wallpaper
+	"custom/wallpaper": {
+    	"format": " ",
+    	"tooltip": true,
+    	"tooltip-format": " Change Wallpaper!",
+    	"on-click": "~/.config/rofi/menus/swww.sh",
+	},
+
     // Power Menu
     "custom/exit": {
         "format": "",
-        "on-click": "wlogout",
+        "on-click": "wlogout -b 6",
         "tooltip": false
     },
+
+	"group/quicklinks-right": {
+		"orientation": "horizontal",
+		"modules": ["custom/wallpaper", "custom/exit"]
+	},
 
     // System tray
     "tray": {
@@ -108,37 +108,6 @@
             "memory",
             "custom/gpu"
         ]
-    },
-
-    // Group Quicklinks
-    "group/quicklinks": {
-        "orientation": "horizontal",
-        "modules": [
-            "custom/browser",
-            "custom/filemanager",
-        ]
-    },
-
-    // Filemanager Launcher
-    "custom/filemanager": {
-        "format": "",
-        "on-click": "dolphin",
-        "tooltip": false
-    },
-
-    // Browser Launcher
-    "custom/browser": {
-        //TODO replace with proper logo once it's not broken anymore
-        "format": "",
-        "on-click": "firefox",
-        "tooltip": false
-    },
-
-    // Steam launcher
-    "custom/steam": {
-        "format": "",
-        "on-click": "steam",
-        "tooltip": false
     },
 
     // Network

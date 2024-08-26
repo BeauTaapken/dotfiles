@@ -8,6 +8,7 @@
         "margin-top": 14,
         "margin-bottom": 0,
         "output": "DP-3",
+    	"font": "BitstromWera Nerd Font",
 
         // Position BOTTOM
         // "position": "bottom",
@@ -27,7 +28,6 @@
             // START TASK TOOGLE
             "wlr/taskbar",
             // END TASK TOOGLE
-            "group/quicklinks",
             "hyprland/window"
         ],
 
@@ -56,7 +56,6 @@
             "tray",
             // END TRAY TOOGLE
             "custom/notification",
-            "custom/exit",
             "clock"
         ]
     },
@@ -69,6 +68,7 @@
         "margin-top": 14,
         "margin-bottom": 0,
         "output": "DP-1",
+    	"font": "BitstromWera Nerd Font",
 
         // Position BOTTOM
         // "position": "bottom",
@@ -95,25 +95,11 @@
 
         // Modules Right
         "modules-right": [
-            "custom/exit",
-            "clock"
-        ],
-
-        // Group Quicklinks
-        "group/quicklinks": {
-            "orientation": "horizontal",
-            "modules": [
-                "custom/filemanager"
-             ]
-        },
-
-        // Filemanager Launcher
-        "custom/filemanager": {
-            "format": "",
-            "on-click": "dolphin",
-            "tooltip": false
-        },
+            "clock",
+        	"group/quicklinks-right"
+		]
     },
+
     // Right screen
     {
         // General Settings
@@ -123,6 +109,7 @@
         "margin-top": 14,
         "margin-bottom": 0,
         "output": "DP-2",
+    	"font": "BitstromWera Nerd Font",
 
         // Position BOTTOM
         // "position": "bottom",
@@ -140,9 +127,8 @@
         // Modules Left
         "modules-left": [
             // START TASK TOOGLE
-            "wlr/taskbar",
+            "wlr/taskbar"
             // END TASK TOOGLE
-            "custom/steam"
         ],
 
         // Modules Center
