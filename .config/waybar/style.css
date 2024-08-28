@@ -161,14 +161,8 @@ window#waybar.empty #window {
     opacity: 0.9;
 }
 
-/* -----------------------------------------------------
- * Quicklinks
- * ----------------------------------------------------- */
-/*#quicklinks-right,
-#quicklinks-left {
-    background: @color1;
-}*/
 #quicklinks-right {
+    padding-right: 0px;
     margin-right: 7px;
 }
 #quicklinks-left {
@@ -179,10 +173,10 @@ window#waybar.empty #window {
     padding: 0px 5px;
 	transition: all 0.2s ease-in-out;
 }
-/* #quicklinks-right *:hover,
-#quicklinks-left *:hover {
-    background: @color11;
-} */
+
+#wallpaper {
+    padding-right: 2px;
+}
 
 /* -----------------------------------------------------
  * Custom Modules

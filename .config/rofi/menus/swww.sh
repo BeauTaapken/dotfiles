@@ -30,7 +30,7 @@ wallpaper_ext=$(echo $final_wallpaper | sed "s/.*\.\(.*\)/\1/")
 if [[ $selected_wallpaper != "" ]]; then
     monitor=$(hyprctl activeworkspace | grep -o "monitor .*" | sed -n 's/monitor //; s/://p')
     swww img ~/Pictures/Wallpapers/$final_wallpaper -o $monitor --transition-type center --transition-fps 60 --transition-step 100 &&
-    wallust run ~/Pictures/Wallpapers/$final_wallpaper -n -p dark16 &&
+    # wallust run ~/Pictures/Wallpapers/$final_wallpaper -n -p dark16 &&
     ln -f ~/Pictures/Wallpapers/$final_wallpaper ~/.cache/current-wallpaper-$monitor && # creates a symlink to the current wallpaper
     ~/.config/hypr/scripts/generate-wallpaper-variants.sh # generates all the variants at a single time
 fi
