@@ -84,8 +84,10 @@
     },
 
     "custom/gpu": {
-        "exec": "usage=`nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader | tr -d ' '` && temp=`nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader` && echo $usage $temp",
-        "format": "/  {} "
+        "exec": "nvidia-smi --query-gpu=utilization.gpu,temperature.gpu --format=csv,noheader | sed 's/ //; s/, / /'",
+        "format": "/ 󰢮 {}",
+		"return-type": "",
+		"interval": 1
     },
 
     // System
@@ -96,14 +98,14 @@
 
     // Group Hardware
     "group/hardware": {
-        "orientation": "inherit",
-        "drawer": {
-            "transition-duration": 300,
-            "children-class": "not-memory",
-            "transition-left-to-right": false
-        },
+        "orientation": "horizontal",
+        //"drawer": {
+        //    "transition-duration": 300,
+        //    "children-class": "not-memory",
+        //    "transition-left-to-right": false
+        //},
         "modules": [
-            "custom/system",
+        //    "custom/system",
             "cpu",
             "memory",
             "custom/gpu"
@@ -114,7 +116,7 @@
     "network": {
         "format": "{ifname}",
         "format-wifi": "   {signalStrength}%",
-        "format-ethernet": "",
+        "format-ethernet": "  {bandwidthUpBits}  {bandwidthDownBits}",
         "format-disconnected": "Disconnected",
         "tooltip-format": " {ifname} via {gwaddri}",
         "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
