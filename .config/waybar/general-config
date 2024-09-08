@@ -57,7 +57,7 @@
 
     // Clock
     "clock": {
-        // "timezone": "America/New_York",
+        // "timezone": "Europe/Brussels",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         // START CLOCK FORMAT
         "format-alt": "{:%Y-%m-%d}"
