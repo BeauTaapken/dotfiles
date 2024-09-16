@@ -59,30 +59,6 @@
     },
     "backlight": {
       "label": "󰃟"
-    },
-    "buttons-grid": {
-      "actions": [
-        {
-          "label": "󰐥",
-          "command": "bash -c $HOME/.config/hypr/scripts/power-menu.sh"
-        },
-        {
-          "label": "󰌾",
-          "command": "loginctl lock-session"
-        },
-        {
-          "label": "󰍃",
-          "command": "hyprctl dispatch exit"
-        },
-        {
-          "label": "󰝟",
-          "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
-        },
-        {
-          "label": "󰂯",
-          "command": "blueman-manager"
-        }
-      ]
     }
   }
 }
