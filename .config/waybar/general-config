@@ -74,8 +74,15 @@
     "cpu": {
         // CPU icon in format, temperature as well
         "format": " {usage}% ",
-        "on-click": "alacritty -e htop"
+        "on-click": "kitty -e htop"
     },
+
+	"temperature": {
+		"hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+		"critical-threshold": 80,
+		"format-critical": "󰈸{temperatureC} ",
+		"format": "{temperatureC} ",
+	},
 
     // Memory
     "memory": {
@@ -99,14 +106,9 @@
     // Group Hardware
     "group/hardware": {
         "orientation": "horizontal",
-        //"drawer": {
-        //    "transition-duration": 300,
-        //    "children-class": "not-memory",
-        //    "transition-left-to-right": false
-        //},
         "modules": [
-        //    "custom/system",
             "cpu",
+			"temperature",
             "memory",
             "custom/gpu"
         ]
