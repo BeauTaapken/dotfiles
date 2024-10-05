@@ -13,8 +13,10 @@ alias aniu='sudo ani-cli -U'
 alias ssdhealth='sudo smartctl -a /dev/nvme0'
 
 # Easy docker compose up and down
-alias jellyfinup='docker compose -f /mnt/crucial-ssd/Server/docker-compose.yml up &; disown'
-alias jellyfindown='docker compose -f /mnt/crucial-ssd/Server/docker-compose.yml down'
+alias jellyfinup='docker compose -f /mnt/crucial-ssd/Server/docker-compose-jellyfin.yml up &; disown'
+alias jellyfindown='docker compose -f /mnt/crucial-ssd/Server/docker-compose-jellyfin.yml down'
+alias downloadup='docker compose -f /mnt/crucial-ssd/Server/docker-compose-download.yml up &; disown'
+alias downloaddown='docker compose -f /mnt/crucial-ssd/Server/docker-compose-download.yml down'
 
 # Easy nvim editing
 alias editzsh='nvim ~/.zshrc'
