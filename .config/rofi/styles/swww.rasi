@@ -2,7 +2,6 @@
 configuration {
 	modi:                       "dmenu";
     show-icons:                 true;
-	test: "kitty ./getFocusedMonitorId.sh";
 
     kb-remove-to-eol: "";
     kb-mode-complete: "";
