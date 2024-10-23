@@ -79,7 +79,7 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-export EDITOR=nano
+export EDITOR=nvim
 export STEAM_COMPAT_CLIENT_INSTALL_PATH="$HOME/.local/share/Steam"
 export NVD_BACKEND="direct"
 export MOZ_DISABLE_RDD_SANDBOX="1"
