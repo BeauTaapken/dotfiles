@@ -42,6 +42,7 @@ lib32-gamemode
 lib32-libpipewire
 lib32-libpulse
 libappindicator-gtk3
+libheif
 libpulse
 libreoffice-fresh
 libva-nvidia-driver
@@ -72,6 +73,7 @@ nuget
 nvidia-container-toolkit
 nwg-look
 obs-studio
+openslide
 openssh
 openvpn
 otf-font-awesome
@@ -83,6 +85,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 pm2
+poppler-glib
 python-pip
 python-pystray
 qmk
