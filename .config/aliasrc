@@ -23,7 +23,7 @@ alias editzsh='nvim ~/.zshrc'
 alias editalias='nvim ~/.config/aliasrc'
 
 # Fixes for some random breaking issues on kde
-alias primary='/mnt/crucial-ssd/shell-scripts/primary.sh'
+alias primary='/mnt/crucial-ssd/shell-scripts/old/primary.sh'
 alias kwinclear='kwin_x11 --replace &; disown'
 alias plasmaclear='killall plasmashell && kstart5 plasmashell &; disown'
 
