@@ -20,6 +20,9 @@ efibootmgr
 egl-wayland
 ethtool
 fastfetch
+fcitx5
+fcitx5-configtool
+fcitx5-mozc
 ffmpegthumbnailer
 firefox
 fuse2
