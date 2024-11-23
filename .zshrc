@@ -98,7 +98,7 @@ export SDL_VIDEO_ALLOW_SCREENSAVER=1
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nvim'
 else
-  export EDITOR='mvim'
+  export EDITOR='nvim'
 fi
 
 # NOTE: this is for fcitx
