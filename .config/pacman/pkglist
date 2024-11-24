@@ -63,6 +63,7 @@ mesa-utils
 mingw-w64-gcc
 mono
 mpv
+mpv-mpris
 msitools
 nano
 neovim
