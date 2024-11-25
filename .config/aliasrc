@@ -12,7 +12,7 @@ alias aniu='sudo ani-cli -U'
 # Check 980 pro health
 alias ssdhealth='sudo smartctl -a /dev/nvme0'
 
-# Easy docker compose up and down
+# Easy docker compose up and down TODO: make this work with the separate server once it's setup
 alias jellyfinup='docker compose -f /mnt/crucial-ssd/Server/docker-compose-jellyfin.yml up -d'
 alias jellyfindown='docker compose -f /mnt/crucial-ssd/Server/docker-compose-jellyfin.yml down'
 alias downloadup='docker compose -f /mnt/crucial-ssd/Server/docker-compose-download.yml up -d'
@@ -23,14 +23,13 @@ alias editzsh='nvim ~/.zshrc'
 alias editalias='nvim ~/.config/aliasrc'
 
 # Fixes for some random breaking issues on kde
-alias primary='/mnt/crucial-ssd/shell-scripts/old/primary.sh'
+alias primary='~/shell-scripts/old/primary.sh'
 alias kwinclear='kwin_x11 --replace &; disown'
 alias plasmaclear='killall plasmashell && kstart5 plasmashell &; disown'
 
 # GiantFox
 alias vpnGF='sudo openvpn --config "/mnt/crucial-ssd/Giant-Fox/Documents/VPN/GiantFox_beau_giantdevs.ovpn"'
 alias vpnGFOther='sudo openvpn --config "/mnt/crucial-ssd/Giant-Fox/Documents/VPN/Sambalvpn_private_Beau_default.ovpn"'
-alias sshGitlab='ssh 167.172.38.242'
 
 # Git
 alias gfp='git fetch && git pull'
@@ -73,10 +72,10 @@ alias randomanimefolder='ls /mnt/1tb-hdd/server/Anime/ |sort -R | head -1 | tail
 # Backup displayfix if  ever needed, probably won't ever be needed now that i'm on wayland though
 alias displayfix='xrandr --output DP-4 --mode 3440x1440 --rate 144.00 --pos 1920x560 --primary --output DP-2 --mode 2560x1080 --rate 75.00 --pos 5360x0 --rotate right --output DP-1 --mode 1920x1080 --pos 0x838'
 # steam aliases
-alias cleansteam='sudo /mnt/crucial-ssd/shell-scripts/zShaderCacheKiller.sh'
+alias cleansteam='sudo ~/shell-scripts/zShaderCacheKiller.sh'
 alias editsteam='nvim /usr/lib/steam/bin_steam.sh'
 alias idlecheat='STEAM_COMPAT_DATA_PATH="/mnt/970-evo/SteamLibrary/steamapps/compatdata/627690" WINEPREFIX=$PWD "/home/beau/.steam/steam/steamapps/common/Proton - Experimental/proton" run /opt/cheat-engine-zh/Cheat\ Engine.exe'
-alias updateprotonge='/mnt/crucial-ssd/shell-scripts/update-proton-ge.sh'
+alias updateprotonge='~/shell-scripts/update-proton-ge.sh'
 
 # Steam achievement notifier
 alias san='/mnt/crucial-ssd/SAN/san.AppImage &; disown'
