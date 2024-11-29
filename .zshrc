@@ -102,12 +102,12 @@ else
 fi
 
 # NOTE: this is for fcitx
-export XMODIFIERS=@im=fcitx
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export CLUTTER_IM_MODULE=fcitx
-export SDL_IM_MODULE=fcitx
-export GLFW_IM_MODULE=fcitx
+#export XMODIFIERS=@im=fcitx
+#export GTK_IM_MODULE=fcitx
+#export QT_IM_MODULE=fcitx
+#export CLUTTER_IM_MODULE=fcitx
+#export SDL_IM_MODULE=fcitx
+#export GLFW_IM_MODULE=fcitx
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

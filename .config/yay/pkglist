@@ -5,13 +5,10 @@ eam-git
 gamescope-git
 huenicorn
 hypridle-git
-hyprland-git
 hyprland-protocols-git
 hyprlang-git
-hyprlock-git
 hyprpaper-git
 hyprpicker-git
-hyprpolkitagent-git
 hyprshot-git
 hyprwayland-scanner-git
 imagewriter
@@ -38,6 +35,5 @@ wallust
 wayland-logout
 wljoywake
 wlogout
-xdg-desktop-portal-hyprland-git
 yay
 yaycache-hook
