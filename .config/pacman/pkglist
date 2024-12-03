@@ -45,6 +45,7 @@ lf
 lib32-gamemode
 lib32-libpipewire
 lib32-libpulse
+lib32-libvdpau
 libappindicator-gtk3
 libheif
 libpulse
@@ -75,7 +76,6 @@ noto-fonts-emoji
 noto-fonts-extra
 npm
 nuget
-nvidia-container-toolkit
 nwg-look
 obs-studio
 openslide
