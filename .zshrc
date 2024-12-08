@@ -88,7 +88,7 @@ export LIBVA_DRIVER_NAME="nvidia"
 # Added by Toolbox App
 export PATH="$PATH:/home/beau/.local/share/JetBrains/Toolbox/scripts"
 
-#export LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit_64.so"
+export LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit_64.so"
 export SDL_VIDEO_ALLOW_SCREENSAVER=1
 
 # You may need to manually set your language environment
