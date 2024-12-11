@@ -18,11 +18,13 @@ imagewriter
 insomnia
 jellyfin-media-player-git
 jstest-gtk-git
+lib32-nvidia-utils-beta
 lib32-opencl-nvidia-beta
 livecaptions
 new-lg4ff-dkms-git
 nvidia-open-beta-dkms
 nvidia-settings-beta
+nvidia-utils-beta
 obs-backgroundremoval
 opencl-nvidia-beta
 oversteer

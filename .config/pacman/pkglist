@@ -25,7 +25,6 @@ fcitx5-configtool
 fcitx5-mozc
 ffmpegthumbnailer
 firefox
-flameshot
 fuse2
 gamemode
 ghex
@@ -83,14 +82,12 @@ openslide
 openssh
 openvpn
 otf-font-awesome
-p7zip
 pavucontrol
 pcmanfm-qt
 pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
-plasma-desktop
 pm2
 poppler-glib
 python-pip
@@ -111,6 +108,7 @@ steam
 swayidle
 swaync
 sysfsutils
+telegram-desktop
 thunderbird
 timeshift
 ttf-font-awesome
