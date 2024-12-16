@@ -5,15 +5,10 @@
 
         // Position TOP
         "layer": "top",
-        "margin-top": 14,
+        "margin-top": 5,
         "margin-bottom": 0,
         "output": "DP-3",
     	"font": "BitstromWera Nerd Font",
-
-        // Position BOTTOM
-        // "position": "bottom",
-        // "margin-top": 0,
-        // "margin-bottom": 14,
 
         "layer": "top",
         "margin-left": 0,
@@ -65,15 +60,10 @@
 
         // Position TOP
         "layer": "top",
-        "margin-top": 14,
+        "margin-top": 5,
         "margin-bottom": 0,
         "output": "DP-1",
     	"font": "BitstromWera Nerd Font",
-
-        // Position BOTTOM
-        // "position": "bottom",
-        // "margin-top": 0,
-        // "margin-bottom": 14,
 
         "layer": "top",
         "margin-left": 0,
@@ -106,7 +96,7 @@
 
         // Position TOP
         "layer": "top",
-        "margin-top": 14,
+        "margin-top": 5,
         "margin-bottom": 0,
         "output": "DP-2",
     	"font": "BitstromWera Nerd Font",
