@@ -13,10 +13,10 @@ alias aniu='sudo ani-cli -U'
 alias ssdhealth='sudo smartctl -a /dev/nvme0'
 
 # Easy docker compose up and down TODO: make this work with the separate server once it's setup
-alias jellyfinup='docker compose -f /mnt/crucial-ssd/Server/docker-compose-jellyfin.yml up -d'
-alias jellyfindown='docker compose -f /mnt/crucial-ssd/Server/docker-compose-jellyfin.yml down'
-alias downloadup='docker compose -f /mnt/crucial-ssd/Server/docker-compose-download.yml up -d'
-alias downloaddown='docker compose -f /mnt/crucial-ssd/Server/docker-compose-download.yml down'
+#alias jellyfinup='docker compose -f /mnt/crucial-ssd/Server/docker-compose-jellyfin.yml up -d'
+#alias jellyfindown='docker compose -f /mnt/crucial-ssd/Server/docker-compose-jellyfin.yml down'
+#alias downloadup='docker compose -f /mnt/crucial-ssd/Server/docker-compose-download.yml up -d'
+#alias downloaddown='docker compose -f /mnt/crucial-ssd/Server/docker-compose-download.yml down'
 
 # Easy nvim editing
 alias editzsh='nvim ~/.zshrc'
@@ -29,7 +29,6 @@ alias plasmaclear='killall plasmashell && kstart5 plasmashell &; disown'
 
 # GiantFox
 alias vpnGF='sudo openvpn --config "/mnt/crucial-ssd/Giant-Fox/Documents/VPN/GiantFox_beau_giantdevs.ovpn"'
-alias vpnGFOther='sudo openvpn --config "/mnt/crucial-ssd/Giant-Fox/Documents/VPN/Sambalvpn_private_Beau_default.ovpn"'
 
 # Git
 alias gfp='git fetch && git pull'
