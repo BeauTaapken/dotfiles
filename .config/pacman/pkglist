@@ -93,6 +93,7 @@ pm2
 poppler-glib
 python-pip
 python-pystray
+qbittorrent
 qmk
 qpwgraph
 qt5ct
@@ -113,6 +114,7 @@ telegram-desktop
 thunderbird
 timeshift
 ttf-font-awesome
+unrar
 v4l2loopback-dkms
 vdpauinfo
 vulkan-tools
