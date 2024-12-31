@@ -101,7 +101,6 @@ qt6ct
 redis
 reflector
 rofi-wayland
-rust
 sddm
 signal-desktop
 smartmontools
