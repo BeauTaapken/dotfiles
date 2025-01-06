@@ -24,6 +24,7 @@ fastfetch
 fcitx5
 fcitx5-configtool
 fcitx5-mozc
+fd
 ffmpegthumbnailer
 firefox
 fuse2
@@ -64,6 +65,7 @@ linux-lts-headers
 lxqt-archiver
 man-db
 mangohud
+markdownlint-cli
 mesa-utils
 mingw-w64-gcc
 mono
@@ -85,6 +87,7 @@ openslide
 openssh
 openvpn
 otf-font-awesome
+pandoc-cli
 pavucontrol
 pcmanfm-qt
 pipewire
