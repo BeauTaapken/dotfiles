@@ -13,6 +13,7 @@ cmake
 composer
 cpio
 dbeaver
+dmidecode
 docker
 docker-compose
 dotnet-runtime
@@ -96,6 +97,7 @@ pipewire-jack
 pipewire-pulse
 pm2
 poppler-glib
+psensor
 python-pip
 python-pystray
 qbittorrent
