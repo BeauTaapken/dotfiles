@@ -39,6 +39,7 @@ grub
 gst-plugin-pipewire
 gvim
 htop
+i2c-tools
 imagemagick
 iwd
 jdk17-openjdk
@@ -84,6 +85,7 @@ npm
 nuget
 nwg-look
 obs-studio
+openrgb
 openslide
 openssh
 openvpn
@@ -103,6 +105,7 @@ python-pystray
 qbittorrent
 qmk
 qpwgraph
+qt5-wayland
 qt5ct
 qt6ct
 redis
