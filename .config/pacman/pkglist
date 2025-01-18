@@ -129,6 +129,7 @@ vdpauinfo
 vulkan-tools
 waybar
 webkit2gtk
+webkit2gtk-4.1
 wget
 wine
 wireless_tools
