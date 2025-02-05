@@ -53,6 +53,9 @@ alias pycharm='~/.local/share/JetBrains/Toolbox/apps/pycharm-professional/bin/py
 alias rider='~/.local/share/JetBrains/Toolbox/apps/rider/bin/rider.sh'
 alias rustrover='~/.local/share/JetBrains/Toolbox/apps/rustrover/bin/rustrover.sh'
 
+# Local LLM
+alias qwen2.5-coder='ollama run qwen2.5-coder'
+
 # Modelconverter
 alias mdlc='/mnt/wd-black/Luigis_mansion_rip/MDLConverter/ModelConverter.exe'
 
