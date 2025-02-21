@@ -67,6 +67,9 @@ alias disablesmt='echo off | sudo tee /sys/devices/system/cpu/smt/control'
 alias enablesmt='echo on | sudo tee /sys/devices/system/cpu/smt/control'
 alias checksmt='cat /sys/devices/system/cpu/smt/active'
 
+# Pyroveil
+alias updatepyroveil='cd ~/pyroveil && git fetch && git pull && git submodule update --init && cmake . -Bbuild -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$HOME/.local && ninja -C build install'
+
 # Random anime stuff
 alias randomanime='python ~/Downloads/malptw_rand.py ~/Downloads/animelist.xml'
 alias randomanimefolder='ls /mnt/1tb-hdd/server/Anime/ |sort -R | head -1 | tail -1 |while read file; do dolphin /mnt/1tb-hdd/server/Anime/$file; done'
