@@ -18,11 +18,17 @@ Name=Default
 # Layout
 Default Layout=eu
 # Default Input Method
-DefaultIM=keyboard-eu
+DefaultIM=keyboard-jp-dvorak
 
 [Groups/1/Items/0]
 # Name
 Name=keyboard-eu
+# Layout
+Layout=
+
+[Groups/1/Items/1]
+# Name
+Name=keyboard-jp-dvorak
 # Layout
 Layout=
 
