@@ -66,6 +66,7 @@ linux-firmware
 linux-headers
 linux-lts
 linux-lts-headers
+lua51-luautf8
 lxqt-archiver
 man-db
 mangohud
