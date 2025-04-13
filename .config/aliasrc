@@ -10,7 +10,7 @@ alias anidr='ani-cli -d -r'
 alias aniu='sudo ani-cli -U'
 
 # Check 980 pro health
-alias ssdhealth='sudo smartctl -a /dev/nvme1n1'
+alias ssdhealth='sudo smartctl -a /dev/nvme2n1'
 
 # Easy docker compose up and down TODO: make this work with the separate server once it's setup
 #alias jellyfinup='docker compose -f /mnt/crucial-ssd/Server/docker-compose-jellyfin.yml up -d'
@@ -23,9 +23,11 @@ alias editzsh='nvim ~/.zshrc'
 alias editalias='nvim ~/.config/aliasrc'
 
 # Fixes for some random breaking issues on kde
+#alias kwinclear='kwin_x11 --replace &; disown'
+#alias plasmaclear='killall plasmashell && kstart5 plasmashell &; disown'
+
+# X11/Xwayland monitor fix, prob not needed anymore
 alias primary='~/shell-scripts/old/primary.sh'
-alias kwinclear='kwin_x11 --replace &; disown'
-alias plasmaclear='killall plasmashell && kstart5 plasmashell &; disown'
 
 # GiantFox
 alias vpnGF='sudo openvpn --config "/mnt/crucial-ssd/Giant-Fox/Documents/VPN/GiantFox_beau_giantdevs.ovpn"'
@@ -86,7 +88,8 @@ alias updateprotonge='~/shell-scripts/update-proton-ge.sh'
 alias san='/mnt/crucial-ssd/SAN/san.AppImage &; disown'
 
 # Unreal
-alias unreal='/mnt/980-evo/UnrealEngine4/Engine/Binaries/Linux/UE4Editor &; disown'
+# Try unreal 5 without the SDL_VIDEODRIVER argument, if InitSDL() failed error shows up without it, try with argument again
+alias unreal='SDL_VIDEODRIVER=x11 /mnt/980-evo/UnrealEngine4/Engine/Binaries/Linux/UE4Editor &; disown'
 alias generateunreal='/mnt/980-evo/UnrealEngine4/GenerateProjectFiles.sh $PWD/*.uproject -game -engine'
 alias cleanproject='/mnt/980-evo/UnrealEngine4/Engine/Binaries/Linux/UE4Editor-Cmd $PWD/*.uproject -run=WrangleContent -allmaps'
 
