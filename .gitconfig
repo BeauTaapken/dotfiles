@@ -1,0 +1,15 @@
+[user]
+	email = beau@lioncode.nl
+	name = Beau Taapken
+[core]
+	editor = nvim
+[push]
+	autosetupremote = true
+[init]
+	defaultBranch = master
+	defaultBranch = main
+
+[includeIf "gitdir:/mnt/crucial-ssd/Giant-Fox/"]
+	path = /mnt/crucial-ssd/Giant-Fox/.gitconfig
+[includeIf  "gitdir:/mnt/crucial-ssd/Giant-Fox/Adabtive/"]
+	path= /mnt/crucial-ssd/Giant-Fox/Adabtive/.gitconfig
