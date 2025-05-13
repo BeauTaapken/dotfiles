@@ -31,7 +31,6 @@ ffmpegthumbnailer
 firefox
 fuse2
 gamemode
-gd
 ghex
 git
 git-lfs
@@ -113,7 +112,6 @@ qpwgraph
 qt5-wayland
 qt5ct
 qt6ct
-redis
 reflector
 rofi-wayland
 samba

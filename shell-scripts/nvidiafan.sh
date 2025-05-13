@@ -1,5 +1,5 @@
 #!/bin/env bash
-source /mnt/crucial-ssd/shell-scripts/.env
+source /home/beau/shell-scripts/.env
 
 # Function
 setfan() {
