@@ -104,6 +104,7 @@ pipewire-pulse
 pm2
 poppler-glib
 psensor
+python-black
 python-pip
 python-pystray
 qbittorrent
