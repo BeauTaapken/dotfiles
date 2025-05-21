@@ -92,6 +92,7 @@ alias san='/mnt/crucial-ssd/SAN/san.AppImage &; disown'
 alias unreal='SDL_VIDEODRIVER=x11 /mnt/980-evo/UnrealEngine4/Engine/Binaries/Linux/UE4Editor &; disown'
 alias generateunreal='/mnt/980-evo/UnrealEngine4/GenerateProjectFiles.sh $PWD/*.uproject -game -engine'
 alias cleanproject='/mnt/980-evo/UnrealEngine4/Engine/Binaries/Linux/UE4Editor-Cmd $PWD/*.uproject -run=WrangleContent -allmaps'
+alias buildproject='/mnt/980-evo/UnrealEngine4/Engine/Build/BatchFiles/Linux/Build.sh $(basename $PWD/*.uproject .uproject)Editor Linux Development $PWD/*.uproject'
 
 # Unreal modding
 alias pak='/mnt/crucial-ssd/u4pak.py'
