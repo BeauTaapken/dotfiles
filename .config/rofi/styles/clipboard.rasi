@@ -1,5 +1,5 @@
 configuration {
-	modi:                       "dmenu";
+    modi:                       "dmenu";
 
     kb-remove-to-eol: "";
     kb-mode-complete: "";
@@ -125,10 +125,12 @@ element selected.normal {
     text-color:                  @foreground;
 }
 element-icon {
+    size: 100px;
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        62px;
+    padding: 0 4px 0 0;
     cursor:                      inherit;
+    vertical-align:		 0.5;
 }
 element-text {
     background-color:            transparent;
