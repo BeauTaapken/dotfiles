@@ -85,7 +85,7 @@ alias idlecheat='STEAM_COMPAT_DATA_PATH="/mnt/970-evo/SteamLibrary/steamapps/com
 alias updateprotonge='~/shell-scripts/update-proton-ge.sh'
 
 # Steam achievement notifier
-alias san='/mnt/crucial-ssd/SAN/san.AppImage &; disown'
+alias san='/mnt/crucial-ssd/SAN/san.AppImage --ozone-platform-hint=auto &; disown'
 
 # Unreal
 # Try unreal 5 without the SDL_VIDEODRIVER argument, if InitSDL() failed error shows up without it, try with argument again
