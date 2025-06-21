@@ -13,6 +13,4 @@ Download the user.js file -> go to about:profiles -> click on the default or def
 ## cronjob config
 crontab -e\
 \
-0 23 * * * ~/shell-scripts/automatic-push-dotfiles.sh 2>&1\
-0 3 16 * * /mnt/crucial-ssd/Giant-Fox/giant-fox-automations/telefoonfactuur.sh 2>&1\
-0 3 2 * * /mnt/crucial-ssd/Giant-Fox/giant-fox-automations/kilometervergoeding.sh 2>&1
+0 23 * * * ~/shell-scripts/automatic-push-dotfiles.sh 2>&1
