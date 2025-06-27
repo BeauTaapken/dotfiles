@@ -14,3 +14,8 @@ Download the user.js file -> go to about:profiles -> click on the default or def
 crontab -e\
 \
 0 23 * * * ~/shell-scripts/automatic-push-dotfiles.sh 2>&1
+
+
+## enable service for FIIO auto replug
+systemctl --user daemon-reload
+systemctl --user enable --now replug-after-resume.service
