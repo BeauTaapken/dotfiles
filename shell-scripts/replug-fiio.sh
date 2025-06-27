@@ -1,5 +1,8 @@
-
 #!/bin/bash
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+source ${SCRIPT_DIR}/.env
 
 VENDOR_ID="2972"
 PRODUCT_ID="0077"
@@ -24,6 +27,6 @@ fi
 echo "Found device at: $DEVICE_PATH"
 
 # Unbind and bind
-echo "$DEVICE_PATH" | sudo tee /sys/bus/usb/drivers/usb/unbind
+echo $password | sudo -S bash -c "echo '$DEVICE_PATH' > /sys/bus/usb/drivers/usb/unbind"
 sleep 2
-echo "$DEVICE_PATH" | sudo tee /sys/bus/usb/drivers/usb/bind
+echo $password | sudo -S bash -c "echo '$DEVICE_PATH' > /sys/bus/usb/drivers/usb/bind"
