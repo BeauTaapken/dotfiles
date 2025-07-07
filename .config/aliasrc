@@ -47,6 +47,10 @@ alias gsc='git switch -c'
 # Handmade Hero
 alias handmadeHero='cd /mnt/crucial-ssd/Handmade-Hero/'
 
+# HDR
+alias enablehdr='~/shell-scripts/enable-hdr.sh'
+alias disablehdr='~/shell-scripts/disable-hdr.sh'
+
 # IDE
 alias clion='~/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/clion.sh'
 alias goland='~/.local/share/JetBrains/Toolbox/apps/goland/bin/goland.sh'
