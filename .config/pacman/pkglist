@@ -147,6 +147,7 @@ wget
 wine
 wireless_tools
 wireplumber
+woff2-font-awesome
 xdg-utils
 xdotool
 xorg-xeyes
