@@ -3,6 +3,12 @@
 ## Read to install again
 https://www.atlassian.com/git/tutorials/dotfiles
 
+## Getting all submodules
+config submodule update --init --recursive
+
+## Updating all submodules
+git submodule update --recursive --remote
+
 ### Install [yay](https://github.com/Jguer/yay?tab=readme-ov-file#installation)
 ### Enable crontab (need cronie or alternative if not installed)
 ### run yay -S - < ~/pkglist.txt (https://superuser.com/questions/1061612/how-do-you-make-a-list-file-for-pacman-to-install-from)
