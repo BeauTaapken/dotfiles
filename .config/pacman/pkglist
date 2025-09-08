@@ -41,6 +41,7 @@ godot
 gparted
 grub
 gst-plugin-pipewire
+gvfs
 gvim
 helm
 htop
@@ -120,7 +121,6 @@ qt5-wayland
 qt5ct
 qt6ct
 reflector
-rofi-wayland
 samba
 sddm
 signal-desktop
