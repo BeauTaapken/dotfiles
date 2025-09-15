@@ -122,6 +122,7 @@ qt5-wayland
 qt5ct
 qt6ct
 reflector
+rofi
 samba
 sddm
 signal-desktop
