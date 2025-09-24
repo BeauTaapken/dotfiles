@@ -1,4 +1,3 @@
-ani-cli
 aquamarine-git
 arrpc
 cheat-engine-zh
@@ -33,7 +32,6 @@ lib32-opencl-nvidia-beta
 libstrangle-git
 livecaptions
 new-lg4ff-dkms-git
-ngrok
 nvidia-open-beta-dkms
 nvidia-settings-beta
 nvidia-utils-beta
@@ -47,7 +45,6 @@ protontricks
 samrewritten-git
 slack-desktop-wayland
 swww-git
-terraform-ls
 vesktop
 via-appimage
 wallust
