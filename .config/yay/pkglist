@@ -1,4 +1,3 @@
-aquamarine-git
 arrpc
 cheat-engine-zh
 connect-tunnel
@@ -9,23 +8,9 @@ glaze-git
 hardinfo2
 huenicorn
 hyperhdr-git
-hyprcursor-git
-hyprgraphics-git
-hypridle-git
-hyprland-git
-hyprland-protocols-git
-hyprland-qtutils-git
-hyprlang-git
-hyprlock-git
-hyprpaper-git
-hyprpicker-git
-hyprpolkitagent-git
-hyprshot-git
-hyprutils-git
-hyprwayland-scanner-git
 imagewriter
 insomnia
-jellyfin-media-player
+jellyfin-media-player-git
 jstest-gtk-git
 lib32-nvidia-utils-beta
 lib32-opencl-nvidia-beta
@@ -52,7 +37,6 @@ wayland-logout
 wl-clipboard-x11
 wljoywake
 wlogout
-xdg-desktop-portal-hyprland-git
 xwaylandvideobridge
 yay
 yaycache-hook

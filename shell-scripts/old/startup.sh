@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-sleep 1m
-
-xset dpms 180 0 0
-# LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 steam
-# electron19 /mnt/crucial-ssd/notifier/SteamAchievementNotifier/main.js
