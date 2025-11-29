@@ -89,6 +89,7 @@ linux-lts-headers
 logrotate
 lua51-luautf8
 lxqt-archiver
+ly
 man-db
 mangohud
 markdownlint-cli
@@ -131,8 +132,6 @@ qbittorrent
 qmk
 qpwgraph
 qrencode
-qt5-wayland
-qt5ct
 qt6ct
 reflector
 rofi
@@ -166,7 +165,6 @@ woff2-font-awesome
 xdg-desktop-portal-hyprland
 xdg-utils
 xdotool
-xorg-xeyes
 xorg-xhost
 yt-dlp
 zip
