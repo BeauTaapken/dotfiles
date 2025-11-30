@@ -4,11 +4,6 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # Make the "make" command always use all possible threads on cpu
 alias make='make -j$(nproc)'
 
-# Ani-cli
-alias anid='ani-cli -d -r 1-99999'
-alias anidr='ani-cli -d -r'
-alias aniu='sudo ani-cli -U'
-
 # Check 980 pro health
 alias ssdhealth='sudo smartctl -a /dev/nvme0n1'
 
@@ -21,10 +16,6 @@ alias ssdhealth='sudo smartctl -a /dev/nvme0n1'
 # Easy nvim editing
 alias editzsh='nvim ~/.zshrc'
 alias editalias='nvim ~/.config/aliasrc'
-
-# Fixes for some random breaking issues on kde
-#alias kwinclear='kwin_x11 --replace &; disown'
-#alias plasmaclear='killall plasmashell && kstart5 plasmashell &; disown'
 
 # X11/Xwayland monitor fix, prob not needed anymore
 alias primary='~/shell-scripts/old/primary.sh'
@@ -78,10 +69,10 @@ alias updatepyroveil='cd ~/pyroveil && git fetch && git pull && git submodule up
 
 # Random anime stuff
 alias randomanime='python ~/Downloads/malptw_rand.py ~/Downloads/animelist.xml'
-alias randomanimefolder='ls /mnt/1tb-hdd/server/Anime/ |sort -R | head -1 | tail -1 |while read file; do dolphin /mnt/1tb-hdd/server/Anime/$file; done'
 
 # Backup displayfix if  ever needed, probably won't ever be needed now that i'm on wayland though
 alias displayfix='xrandr --output DP-4 --mode 3440x1440 --rate 144.00 --pos 1920x560 --primary --output DP-2 --mode 2560x1080 --rate 75.00 --pos 5360x0 --rotate right --output DP-1 --mode 1920x1080 --pos 0x838'
+
 # steam aliases
 alias cleansteam='sudo ~/shell-scripts/zShaderCacheKiller.sh'
 alias editsteam='nvim /usr/lib/steam/bin_steam.sh'
@@ -100,7 +91,3 @@ alias buildproject='/mnt/980-evo/UnrealEngine4/Engine/Build/BatchFiles/Linux/Bui
 
 # Unreal modding
 alias pak='/mnt/crucial-ssd/u4pak.py'
-
-# Yay
-alias yayr='yay -Runs'
-alias yayclean='yay -Yc'

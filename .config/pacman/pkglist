@@ -35,6 +35,7 @@ gdu
 ghex
 git
 git-lfs
+glaze
 go
 godot
 gparted
@@ -166,6 +167,5 @@ xdg-desktop-portal-hyprland
 xdg-utils
 xdotool
 xorg-xhost
-yt-dlp
 zip
 zsh
