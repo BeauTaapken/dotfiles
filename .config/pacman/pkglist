@@ -22,6 +22,7 @@ dotnet-sdk
 efibootmgr
 egl-wayland
 ethtool
+evtest
 fastfetch
 fcitx5
 fcitx5-configtool
@@ -78,6 +79,7 @@ lib32-libvdpau
 libappindicator
 libheif
 libpulse
+libratbag
 libreoffice-fresh
 libva-nvidia-driver
 libva-utils
@@ -90,7 +92,6 @@ linux-lts-headers
 logrotate
 lua51-luautf8
 lxqt-archiver
-ly
 man-db
 mangohud
 markdownlint-cli
@@ -120,6 +121,7 @@ otf-font-awesome
 pandoc-cli
 pavucontrol
 pcmanfm-qt
+piper
 pipewire
 pipewire-alsa
 pipewire-jack
