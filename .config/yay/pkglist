@@ -1,4 +1,5 @@
 arrpc
+awww-git
 cheat-engine-zh
 connect-tunnel
 dualsensectl
@@ -7,16 +8,10 @@ gamescope-git
 huenicorn
 hyperhdr-git
 insomnia
-jellyfin-media-player-git
+jellyfin-desktop-git
 jstest-gtk-git
-lib32-nvidia-utils-beta
-lib32-opencl-nvidia-beta
 libstrangle
 new-lg4ff-dkms-git
-nvidia-open-beta-dkms
-nvidia-settings-beta
-nvidia-utils-beta
-opencl-nvidia-beta
 oversteer
 paccache-hook
 path-of-building-community-git
@@ -24,7 +19,6 @@ protonfixes
 protontricks
 samrewritten-git
 slack-desktop-wayland
-swww-git
 vesktop
 via-appimage
 wallust

@@ -76,6 +76,8 @@ lib32-gamemode
 lib32-libpipewire
 lib32-libpulse
 lib32-libvdpau
+lib32-nvidia-utils
+lib32-opencl-nvidia
 libappindicator
 libheif
 libpulse
@@ -111,9 +113,13 @@ noto-fonts-emoji
 noto-fonts-extra
 npm
 nuget
+nvidia-open-dkms
+nvidia-settings
+nvidia-utils
 nwg-look
 obs-studio
 obsidian
+opencl-nvidia
 openslide
 openssh
 openvpn
