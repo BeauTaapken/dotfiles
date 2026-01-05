@@ -19,7 +19,7 @@ configuration {
 }
 
 /*****----- Global Properties -----*****/
-@import                          "../colors.rasi"
+@import                          "../visuals.rasi"
 
 /*****----- Main Window -----*****/
 window {
