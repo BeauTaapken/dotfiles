@@ -17,9 +17,6 @@ alias ssdhealth='sudo smartctl -a /dev/nvme0n1'
 alias editzsh='nvim ~/.zshrc'
 alias editalias='nvim ~/.config/aliasrc'
 
-# X11/Xwayland monitor fix, prob not needed anymore
-alias primary='~/shell-scripts/old/primary.sh'
-
 # GiantFox
 alias vpnGF='sudo openvpn --config "/mnt/crucial-ssd/Giant-Fox/Documents/VPN/GiantFox_beau_giantdevs.ovpn"'
 
