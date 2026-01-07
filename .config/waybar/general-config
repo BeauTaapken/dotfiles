@@ -29,15 +29,7 @@
         }
     },
 
-	// Wallpaper
-	"custom/wallpaper": {
-    	"format": " ",
-    	"tooltip": true,
-    	"tooltip-format": " Change Wallpaper!",
-    	"on-click": "~/.config/rofi/menus/swww.sh",
-	},
-
-    // Power Menu
+	// Power Menu
     "custom/exit": {
         "format": "",
         "on-click": "wlogout -b 6",
@@ -46,7 +38,7 @@
 
 	"group/quicklinks-right": {
 		"orientation": "horizontal",
-		"modules": ["custom/wallpaper", "custom/exit"]
+		"modules": ["custom/exit"]
 	},
 
     // System tray
@@ -57,7 +49,7 @@
 
     // Clock
     "clock": {
-        // "timezone": "Europe/Brussels",
+        // "timezone": "Europe/Amsterdam",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         // START CLOCK FORMAT
         "format-alt": "{:%d-%m-%Y}"
@@ -89,7 +81,7 @@
     // Memory
     "memory": {
         "format": "/  {}% ",
-        "on-click": "alacritty -e htop"
+        "on-click": "kitty -e htop"
     },
 
     "custom/gpu": {
