@@ -132,6 +132,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 poppler-glib
+protontricks
 psensor
 python-black
 python-pip
@@ -151,7 +152,6 @@ steam
 swayidle
 swaync
 sysfsutils
-telegram-desktop
 tesseract
 tesseract-data-nld
 tflint
@@ -163,15 +163,14 @@ vdpauinfo
 vulkan-tools
 waybar
 webkit2gtk
-webkit2gtk-4.1
 wget
 wine
-wireless_tools
 wireplumber
 woff2-font-awesome
 xdg-desktop-portal-hyprland
 xdg-utils
 xdotool
+xorg-xeyes
 xorg-xhost
 zip
 zsh
