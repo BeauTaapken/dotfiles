@@ -40,12 +40,12 @@ alias enablehdr='~/shell-scripts/enable-hdr.sh'
 alias disablehdr='~/shell-scripts/disable-hdr.sh'
 
 # IDE
-alias clion='~/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/clion.sh'
-alias goland='~/.local/share/JetBrains/Toolbox/apps/goland/bin/goland.sh'
-alias intellij='~/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin/idea.sh'
-alias pycharm='~/.local/share/JetBrains/Toolbox/apps/pycharm-professional/bin/pycharm.sh'
-alias rider='~/.local/share/JetBrains/Toolbox/apps/rider/bin/rider.sh'
-alias rustrover='~/.local/share/JetBrains/Toolbox/apps/rustrover/bin/rustrover.sh'
+#alias clion='~/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/clion.sh'
+#alias goland='~/.local/share/JetBrains/Toolbox/apps/goland/bin/goland.sh'
+#alias intellij='~/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin/idea.sh'
+#alias pycharm='~/.local/share/JetBrains/Toolbox/apps/pycharm-professional/bin/pycharm.sh'
+#alias rider='~/.local/share/JetBrains/Toolbox/apps/rider/bin/rider.sh'
+#alias rustrover='~/.local/share/JetBrains/Toolbox/apps/rustrover/bin/rustrover.sh'
 
 # Local LLM
 alias qwen2.5-coder='ollama run qwen2.5-coder'
