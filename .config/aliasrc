@@ -7,6 +7,9 @@ alias make='make -j$(nproc)'
 # Check 980 pro health
 alias ssdhealth='sudo smartctl -a /dev/nvme0n1'
 
+# Convert to pdf
+alias converttopdf='soffice --convert-to pdf'
+
 # Easy docker compose up and down TODO: make this work with the separate server once it's setup
 #alias jellyfinup='docker compose -f /mnt/crucial-ssd/Server/docker-compose-jellyfin.yml up -d'
 #alias jellyfindown='docker compose -f /mnt/crucial-ssd/Server/docker-compose-jellyfin.yml down'
@@ -39,14 +42,6 @@ alias handmadeHero='cd /mnt/crucial-ssd/Handmade-Hero/'
 alias enablehdr='~/shell-scripts/enable-hdr.sh'
 alias disablehdr='~/shell-scripts/disable-hdr.sh'
 
-# IDE
-#alias clion='~/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/clion.sh'
-#alias goland='~/.local/share/JetBrains/Toolbox/apps/goland/bin/goland.sh'
-#alias intellij='~/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin/idea.sh'
-#alias pycharm='~/.local/share/JetBrains/Toolbox/apps/pycharm-professional/bin/pycharm.sh'
-#alias rider='~/.local/share/JetBrains/Toolbox/apps/rider/bin/rider.sh'
-#alias rustrover='~/.local/share/JetBrains/Toolbox/apps/rustrover/bin/rustrover.sh'
-
 # Local LLM
 alias qwen2.5-coder='ollama run qwen2.5-coder'
 
@@ -68,7 +63,7 @@ alias updatepyroveil='cd ~/pyroveil && git fetch && git pull && git submodule up
 alias randomanime='python ~/Downloads/malptw_rand.py ~/Downloads/animelist.xml'
 
 # Backup displayfix if  ever needed, probably won't ever be needed now that i'm on wayland though
-alias displayfix='xrandr --output DP-1 --mode 3440x1440 --rate 165.00'
+alias displayfix='xrandr --output DP-1 --mode 3440x1440 --rate 165.00 --primary'
 
 # steam aliases
 alias cleansteam='sudo ~/shell-scripts/zShaderCacheKiller.sh'
