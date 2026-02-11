@@ -39,7 +39,6 @@ git
 git-lfs
 glaze
 go
-godot
 gparted
 grub
 gst-plugin-pipewire
@@ -118,6 +117,7 @@ nvidia-utils
 nwg-look
 obs-studio
 obsidian
+ollama
 opencl-nvidia
 openslide
 openssh
