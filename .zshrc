@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 #export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:$HOME/go/bin
+export PATH=/opt/cuda/bin/:$PATH:$HOME/go/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -92,6 +92,9 @@ export PATH="$PATH:/home/beau/.local/share/JetBrains/Toolbox/scripts"
 #TODO: uncomment again if needed to fix steam screensaver, seems to only have been an issue in x11, so maybe this can be removed to prevent some stupid ERROR log things in wine
 #export LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit_64.so"
 export SDL_VIDEO_ALLOW_SCREENSAVER=1
+
+# Ollama Cuda fix
+export LD_LIBRARY_PATH=/opt/cuda/lib64/:$LD_LIBRARY_PATH
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
