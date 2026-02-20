@@ -56,6 +56,9 @@ alias disablesmt='echo off | sudo tee /sys/devices/system/cpu/smt/control'
 alias enablesmt='echo on | sudo tee /sys/devices/system/cpu/smt/control'
 alias checksmt='cat /sys/devices/system/cpu/smt/active'
 
+# Path Of Building Wayland fix
+alias pob='QT_QPA_PLATFORM="xcb" PathOfBuildingCommunity &; disown'
+
 # Pyroveil
 alias updatepyroveil='cd ~/pyroveil && git fetch && git pull && git submodule update --init && cmake . -Bbuild -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$HOME/.local && ninja -C build install'
 
