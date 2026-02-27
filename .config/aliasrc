@@ -42,9 +42,6 @@ alias handmadeHero='cd /mnt/crucial-ssd/Handmade-Hero/'
 alias enablehdr='~/shell-scripts/enable-hdr.sh'
 alias disablehdr='~/shell-scripts/disable-hdr.sh'
 
-# Local LLM
-alias qwen2.5-coder='ollama run qwen2.5-coder'
-
 # Modelconverter
 alias mdlc='/mnt/wd-black/Luigis_mansion_rip/MDLConverter/ModelConverter.exe'
 

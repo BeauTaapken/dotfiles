@@ -90,11 +90,7 @@ export LIBVA_DRIVER_NAME="nvidia"
 export PATH="$PATH:/home/beau/.local/share/JetBrains/Toolbox/scripts"
 
 #TODO: uncomment again if needed to fix steam screensaver, seems to only have been an issue in x11, so maybe this can be removed to prevent some stupid ERROR log things in wine
-#export LD_PRELOAD="/mnt/crucial-ssd/fix_steam_screensaver_lib64.so /mnt/crucial-ssd/sdl_block_screensaver_inhibit_64.so"
 export SDL_VIDEO_ALLOW_SCREENSAVER=1
-
-# Ollama Cuda fix
-export LD_LIBRARY_PATH=/opt/cuda/lib64/:$LD_LIBRARY_PATH
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -121,7 +117,48 @@ export GLFW_IM_MODULE=fcitx
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+ollama-code() {
+    local model=${1:-devstral-small-2}
+
+    export HOME=/mnt/980-evo
+    export OLLAMA_MODELS=/mnt/980-evo/.ollama/models
+    export CUDA_VISIBLE_DEVICES=0
+    
+    if pgrep -f "ollama serve" > /dev/null; then
+        echo "✅ Using existing Ollama server"
+        SERVER_ALREADY_RUNNING=true
+    else
+        echo "🚀 Starting Ollama server..."
+        ollama serve > /tmp/ollama.log 2>&1 &
+        SERVER_PID=$!
+        echo "   Server started with PID: $SERVER_PID"
+        
+        echo "   Waiting for server to initialize..."
+        sleep 3
+        
+        if ! curl -s http://localhost:11434/api/tags > /dev/null; then
+            echo "❌ Server failed to start. Check /tmp/ollama.log"
+            return 1
+        fi
+        echo "✅ Server is ready!"
+        SERVER_ALREADY_RUNNING=false
+    fi
+    
+    echo ""
+    echo "🤖 Running model: $model"
+    echo "   (Type /bye or Ctrl+D to exit)"
+    echo "----------------------------------------"
+    ollama run "$model"
+    
+    echo "----------------------------------------"
+    echo "✅ Model session ended."
+    
+    if [ "$SERVER_ALREADY_RUNNING" = false ]; then
+        echo ""
+        pkill -f "ollama serve"
+        echo "   Server stopped"
+    else
+        echo "   (Leaving pre-existing server running)"
+    fi
+}
