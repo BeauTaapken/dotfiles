@@ -69,6 +69,7 @@ alias displayfix='xrandr --output DP-1 --mode 3440x1440 --rate 165.00 --primary'
 alias cleansteam='sudo ~/shell-scripts/zShaderCacheKiller.sh'
 alias editsteam='nvim /usr/lib/steam/bin_steam.sh'
 alias idlecheat='STEAM_COMPAT_DATA_PATH="/mnt/970-evo/SteamLibrary/steamapps/compatdata/627690" WINEPREFIX=$PWD "/home/beau/.steam/steam/steamapps/common/Proton - Experimental/proton" run /opt/cheat-engine-zh/Cheat\ Engine.exe'
+alias ff7ce='STEAM_COMPAT_DATA_PATH="/mnt/970-evo/SteamLibrary/steamapps/compatdata/2484110" WINEPREFIX=$PWD "/home/beau/.steam/steam/compatibilitytools.d/GE-Proton10-34/proton" run /opt/cheat-engine-zh/CE.exe'
 alias updateprotonge='~/shell-scripts/update-proton-ge.sh'
 
 # Steam achievement notifier
