@@ -167,7 +167,6 @@ v4l2loopback-dkms
 vdpauinfo
 vulkan-tools
 waybar
-webkit2gtk
 wget
 wine
 wireplumber
