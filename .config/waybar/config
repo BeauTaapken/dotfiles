@@ -39,7 +39,7 @@
             // END BT TOOGLE
             "battery",
             // START NETWORK TOOGLE
-            "network",
+//            "network",
             // END NETWORK TOOGLE
             "group/hardware",
             //"custom/cliphist",
