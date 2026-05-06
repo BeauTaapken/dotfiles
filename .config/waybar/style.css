@@ -150,7 +150,10 @@ window#waybar.empty #window {
 #pulseaudio,
 #bluetooth,
 #battery,
+#upower*,
 #taskbar,
+#tray,
+#custom-notification,
 #quicklinks-right,
 #quicklinks-left {
     color: @foreground;
@@ -214,6 +217,7 @@ window#waybar.empty #window {
 }
 
 #hardware,
+#upower*,
 #network {
     padding: 0px 10px 0px 10px;
     margin: 0px 15px 0px 0px;
@@ -315,6 +319,10 @@ window#waybar.empty #window {
     -gtk-icon-effect: highlight;
 }
 
+#tray > *:first-child > * {
+    margin-left: 15px;
+}
+
 /* -----------------------------------------------------
  * Swaync
  * ----------------------------------------------------- */
@@ -322,6 +330,7 @@ window#waybar.empty #window {
 #custom-notification {
   font-family: "NotoSansMono Nerd Font";
   font-size: 16px;
-  margin-right:15px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 

@@ -36,6 +36,8 @@
             "pulseaudio",
             // START BT TOOGLE
             "bluetooth",
+			"upower#controller",
+			"upower#mouse",
             // END BT TOOGLE
             "battery",
             // START NETWORK TOOGLE
