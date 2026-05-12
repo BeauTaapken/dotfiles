@@ -171,6 +171,7 @@ waybar
 wget
 wine
 wireplumber
+wlr-randr
 woff2-font-awesome
 xdg-desktop-portal-hyprland
 xdg-utils
