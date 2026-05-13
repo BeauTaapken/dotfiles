@@ -15,3 +15,5 @@
 	path = /mnt/crucial-ssd/Giant-Fox/Adabtive/.gitconfig
 [includeIf  "gitdir:/mnt/crucial-ssd/Giant-Fox/Solcon/"]
 	path = /mnt/crucial-ssd/Giant-Fox/Solcon/.gitconfig
+[includeIf  "gitdir:/mnt/crucial-ssd/Giant-Fox/UvA/"]
+	path = /mnt/crucial-ssd/Giant-Fox/UvA/.gitconfig
