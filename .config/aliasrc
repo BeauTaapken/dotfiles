@@ -22,6 +22,8 @@ alias editalias='nvim ~/.config/aliasrc'
 
 # GiantFox
 alias vpnGF='sudo openvpn --config "/mnt/crucial-ssd/Giant-Fox/Documents/VPN/GiantFox_beau_giantdevs.ovpn"'
+#TODO: UvA vpn, remove and disable the service (systemctl disable --now pulsesecure.service) after finishing job. also uninstall pulse-secure, webkit2gtk and openconnect, and delete the below script
+alias vpnuva='~/shell-scripts/uva-vpn.sh'
 
 # Git
 alias gfp='git fetch && git pull'

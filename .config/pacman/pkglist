@@ -99,6 +99,7 @@ ly
 man-db
 mangohud
 markdownlint-cli
+maven
 mesa-utils
 mingw-w64-gcc
 minikube
@@ -123,6 +124,7 @@ obs-studio
 obsidian
 ollama-cuda
 opencl-nvidia
+openconnect
 openslide
 openssh
 openvpn
