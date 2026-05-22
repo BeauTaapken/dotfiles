@@ -243,7 +243,7 @@ user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
 
 // PREF: set DoH provider
-user_pref("network.trr.uri", "https://dns.nextdns.io/31094a"); // Hagezi Normal + TIF
+user_pref("network.trr.uri", "https://extended.dns.mullvad.net/dns-query"); // 
 
 // PREF: enforce DNS-over-HTTPS (DoH)
 user_pref("network.trr.mode", 3);
