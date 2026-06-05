@@ -35,7 +35,7 @@ hl.bind(
 	hl.dsp.exec_cmd(
 		"cliphist list | "
 			.. MENU
-			.. '-dmenu -theme ~/.config/rofi/styles/clipboard.rasi -p "󱘢" -display-columns 2 | cliphist decode | wl-copy'
+			.. ' -dmenu -theme ~/.config/rofi/styles/clipboard.rasi -p "󱘢" -display-columns 2 | cliphist decode | wl-copy'
 	)
 )
 --bind = $MAINMOD SHIFT, V, exec, cliphist list | ~/.config/rofi/menus/cliphist-image-preview.sh | $menu -dmenu -theme ~/.config/rofi/styles/clipboard.rasi -p "󱘢" -display-columns 2 | cliphist decode | wl-copy
