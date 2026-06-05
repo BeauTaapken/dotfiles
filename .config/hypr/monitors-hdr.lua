@@ -1,0 +1,56 @@
+hl.monitor({
+	output = "DP-3",
+	mode = "3440x1440@144",
+	position = "0x441",
+	scale = "1",
+	vrr = 1,
+})
+
+hl.monitor({
+	output = "DP-2",
+	mode = "2560x1080@75",
+	position = "6880x0",
+	scale = "1",
+	transform = 3,
+	vrr = 1,
+})
+
+hl.monitor({
+	output = "DP-1",
+	mode = "3440x1440@131",
+	position = "3440x441",
+	scale = "1",
+	bitdepth = "10",
+	cm = "auto",
+	sdrbrightness = "1.18",
+	sdrsaturation = "1.0",
+	sdr_min_luminance = "0.005",
+	sdr_max_luminance = "250",
+	min_luminance = "0.0",
+	max_avg_luminance = "450",
+	max_luminance = "1000",
+	sdr_eotf = "srgb",
+})
+
+--https://github.com/hyprwm/Hyprland/pull/10623
+--monitorv2 {
+--    output = HDMI-A-1
+--    mode = 5120x1440@240
+--    position = 0x0
+--    scale = 1
+--    bitdepth = 10
+--    cm = hdr
+--    sdrbrightness = 1.0
+--    sdrsaturation = 1.0
+--    supports_wide_color = 1
+--    supports_hdr = 1
+--    sdr_min_luminance = 0.005
+--    sdr_max_luminance = 200
+--    min_luminance = 0
+--    max_luminance = 1000
+--    max_avg_luminance = 200
+--}
+
+-- Laptop screen config
+--monitor=eDP-1, 1920x1080@60, 0x0, 1
+--monitor=DP-1, preferred, auto-right, 1
