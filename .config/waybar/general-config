@@ -8,9 +8,6 @@
             "urgent": "",
             "active": "",
             "default": ""
-        },
-        "persistent-workspaces":{
-            "*": 10
         }
     },
 
