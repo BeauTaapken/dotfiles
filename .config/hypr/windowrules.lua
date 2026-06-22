@@ -333,3 +333,13 @@ hl.window_rule({
 	move = "440 0",
 	--suppress_event = fullscreen maximize
 })
+
+hl.window_rule({
+	match = {
+		class = "^(*.exe)$",
+		title = "^(.*Trainer)$",
+	},
+	suppress_event = "fullscreen maximize",
+	float = true,
+	border_size = 0,
+})
