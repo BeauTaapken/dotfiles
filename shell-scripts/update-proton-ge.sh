@@ -10,7 +10,6 @@ while [ $# -gt 0 ]; do
       shift
       ;;
     *)
-      # If you have positional arguments, break out
       break
       ;;
   esac
