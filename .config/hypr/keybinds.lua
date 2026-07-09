@@ -55,18 +55,8 @@ hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute -p $(hyprctl activewind
 hl.bind(MAINMOD .. " + XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ togle"))
 
 -- Jellyfin Desktop specific
-hl.bind(
-	MAINMOD .. " + CTRL + SHIFT + left",
-	hl.dsp.send_shortcut({ mods = "", key = "pageup", window = "stableid:18003c47" })
-)
-hl.bind(
-	MAINMOD .. " + CTRL + SHIFT + right",
-	hl.dsp.send_shortcut({ mods = "", key = "pagedown", window = "stableid:18003c47" })
-)
---hl.bind(MAINMOD .. " + CTRL + SHIFT + left", hl.dsp.exec_cmd("playerctl -p JellyfinDesktop previous"))
---hl.bind(MAINMOD .. " + CTRL + SHIFT + right", hl.dsp.exec_cmd("playerctl -p JellyfinDesktop next"))
+--hl.bind(MAINMOD .. " + CTRL + SHIFT + left", hl.dsp.pass({ mods = "", key = "pageup", window = "stableid:^18003cef$" }))
 hl.bind(MAINMOD .. " + CTRL + ALT + SHIFT + J + D + P", hl.dsp.exec_cmd("playerctl -p JellyfinDesktop play-pause"))
---hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl -p JellyfinDesktop next"))
 
 --# Added this so sony headset actually works with play-pause/next/previous
 --hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl --ignore-player=firefox play-pause"), { locked = true })
