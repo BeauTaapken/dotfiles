@@ -90,7 +90,7 @@ export LIBVA_DRIVER_NAME="nvidia"
 export PATH="$PATH:/home/beau/.local/share/JetBrains/Toolbox/scripts"
 
 #TODO: uncomment again if needed to fix steam screensaver, seems to only have been an issue in x11, so maybe this can be removed to prevent some stupid ERROR log things in wine
-export SDL_VIDEO_ALLOW_SCREENSAVER=1
+#export SDL_VIDEO_ALLOW_SCREENSAVER=1
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
