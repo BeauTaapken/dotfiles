@@ -17,10 +17,19 @@ hl.monitor({
 
 hl.monitor({
 	output = "DP-1",
-	mode = "3440x1440@165",
+	mode = "3440x1440@131",
 	position = "3440x441",
 	scale = "1",
-	--    bitdepth = 10
+	--	vrr = 1,
+	bitdepth = 10,
+	cm = "hdredid",
+	sdrbrightness = 1.0,
+	sdrsaturation = 0.95,
+	sdr_min_luminance = 0.005,
+	sdr_max_luminance = 250,
+	min_luminance = 0,
+	max_avg_luminance = 450,
+	max_luminance = 1000,
 })
 
 --https://github.com/hyprwm/Hyprland/pull/10623
