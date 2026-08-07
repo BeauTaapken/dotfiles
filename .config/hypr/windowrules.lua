@@ -67,14 +67,6 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "Path of Building",
-	match = {
-		class = "pobfrontend",
-	},
-	float = false,
-})
-
-hl.window_rule({
 	name = "SAN notifications",
 	match = {
 		class = "^(steamachievementnotifierv.*)$",
@@ -161,6 +153,14 @@ hl.window_rule({
 	},
 	no_initial_focus = true,
 	suppress_event = "activate",
+})
+
+-- Godot fix
+hl.window_rule({
+	match = {
+		class = "^(Godot)$",
+	},
+	tile = true,
 })
 
 -- Force apps to open on a specific workspace
@@ -287,11 +287,26 @@ hl.window_rule({
 	fullscreen_state = "2 2",
 })
 
+-- PoE stuff
 hl.window_rule({
+	name = "Path of Building",
 	match = {
-		class = "^(Godot)$",
+		class = "pobfrontend",
 	},
-	tile = true,
+	float = false,
+})
+
+hl.window_rule({
+	name = "Awakened PoE Trading",
+	match = {
+		class = "awakened-poe-trade",
+	},
+	border_size = 0,
+	float = true,
+	no_blur = true,
+	no_focus = true,
+	no_shadow = true,
+	render_unfocused = true,
 })
 
 -- MMBNLC Vol.1 (Steam AppID 1798010) Wine virtual desktop
