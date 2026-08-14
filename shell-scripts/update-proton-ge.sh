@@ -50,4 +50,12 @@ done
 
 # extract proton tarball to steam directory
 tar -xf GE-Proton*.tar.gz -C ~/.steam/root/compatibilitytools.d/
+cd ~/.steam/root/compatibilitytools.d/
+for d in GE-Proton*-x86_64 GE-Proton*-aarch64; do
+    [ -d "$d" ] || continue
+    newname="${d%-x86_64}"
+    newname="${newname%-aarch64}"
+    mv -- "$d" "$newname"
+done
+cd -
 echo "All done :)"
