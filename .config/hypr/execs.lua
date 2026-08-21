@@ -7,7 +7,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("fcitx5")
 	hl.exec_cmd("firefox & steam & thunderbird & slack --ozone-platform=wayland & signal-desktop")
 	hl.exec_cmd(
-		"sleep 10; vesktop --ozone-platform=wayland & jellium-desktop --platform wayland-egl & lact & /mnt/crucial-ssd/SAN/san.AppImage"
+		"sleep 10; vesktop --ozone-platform=wayland & jellium-desktop & lact & /mnt/crucial-ssd/SAN/san.AppImage"
 	)
 	hl.exec_cmd("wljoywake -t 10")
 end)
