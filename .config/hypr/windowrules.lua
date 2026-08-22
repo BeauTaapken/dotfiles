@@ -244,7 +244,7 @@ hl.window_rule({
 
 hl.window_rule({
 	match = {
-		title = "^(Jellyfin)$",
+		title = "^(Jellium.*)$",
 	},
 	workspace = "24 silent",
 })
