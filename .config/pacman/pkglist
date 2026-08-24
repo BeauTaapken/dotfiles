@@ -78,7 +78,6 @@ lf
 lib32-gamemode
 lib32-libpipewire
 lib32-libpulse
-lib32-libvdpau
 lib32-nvidia-utils
 lib32-opencl-nvidia
 libappindicator
@@ -86,6 +85,7 @@ libheif
 libpulse
 libratbag
 libreoffice-fresh
+librewolf
 libva-nvidia-driver
 libva-utils
 libvips
@@ -112,6 +112,7 @@ mypy
 neovim
 networkmanager
 nm-connection-editor
+nmap
 noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
