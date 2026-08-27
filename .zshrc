@@ -118,6 +118,53 @@ export GLFW_IM_MODULE=fcitx
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
+ollama-serving() {
+    local model='qwen2.5:32b'
+
+    export HOME=/mnt/980-evo
+    export OLLAMA_MODELS=/mnt/980-evo/.ollama/models
+    export CUDA_VISIBLE_DEVICES=0
+    
+    if pgrep -f "ollama serve" > /dev/null; then
+        echo "✅ Using existing Ollama server"
+        SERVER_ALREADY_RUNNING=true
+    else
+        echo "🚀 Starting Ollama server..."
+        ollama serve > /tmp/ollama.log 2>&1 &
+        SERVER_PID=$!
+        echo "   Server started with PID: $SERVER_PID"
+        
+        echo "   Waiting for server to initialize..."
+        sleep 3
+        
+        if ! curl -s http://localhost:11434/api/tags > /dev/null; then
+            echo "❌ Server failed to start. Check /tmp/ollama.log"
+            return 1
+        fi
+        echo "✅ Server is ready!"
+        SERVER_ALREADY_RUNNING=false
+    fi
+ 
+    read -r
+#    export CLAUDE_CODE_USE_OPENAI=1
+#    export OPENAI_BASE_URL=http://localhost:11434/v1
+#    export OPENAI_MODEL=llama3.1:8b
+#    openclaude
+#
+#    cd /mnt/crucial-ssd/Giant-Fox/openclaude-ollama/
+#
+#    source /mnt/crucial-ssd/Giant-Fox/openclaude-ollama/.venv/bin/activate
+#    python -m src --model qwen2.5:32b
+
+    if [ "$SERVER_ALREADY_RUNNING" = false ]; then
+        echo ""
+        pkill -f "ollama serve"
+        echo "   Server stopped"
+    else
+        echo "   (Leaving pre-existing server running)"
+    fi
+}
+
 ollama-code() {
     local model=${1:-devstral-small-2}
 
