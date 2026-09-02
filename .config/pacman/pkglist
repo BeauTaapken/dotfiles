@@ -24,6 +24,7 @@ docker-compose
 dotnet-runtime
 dotnet-sdk
 dotnet-sdk-9.0
+doxygen
 efibootmgr
 egl-wayland
 ethtool
@@ -151,6 +152,7 @@ qbittorrent
 qmk
 qpwgraph
 qrencode
+qt6-5compat
 qt6ct
 reflector
 rofi
