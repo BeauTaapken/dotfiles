@@ -203,6 +203,7 @@ hl.window_rule({
 		title = "^(Vesktop)$",
 	},
 	workspace = "12 silent",
+	idle_inhibit = "none",
 })
 
 hl.window_rule({
