@@ -1,10 +1,10 @@
 [Groups/0]
 # Group Name
-Name=Default
+Name="Group 1"
 # Layout
 Default Layout=eu
 # Default Input Method
-DefaultIM=keyboard-jp-dvorak
+DefaultIM=mozc
 
 [Groups/0/Items/0]
 # Name
@@ -14,25 +14,10 @@ Layout=
 
 [Groups/0/Items/1]
 # Name
-Name=keyboard-jp-dvorak
-# Layout
-Layout=
-
-[Groups/1]
-# Group Name
-Name="Group 1"
-# Layout
-Default Layout=jp
-# Default Input Method
-DefaultIM=mozc
-
-[Groups/1/Items/0]
-# Name
 Name=mozc
 # Layout
 Layout=
 
 [GroupOrder]
-0=Default
-1="Group 1"
+0="Group 1"
 
