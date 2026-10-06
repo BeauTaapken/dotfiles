@@ -1,5 +1,4 @@
 {
   "serverUrl": "https://jellyfin.beautaapken.nl",
-  "windowMaximized": true,
-  "hwdec": "nvdec"
+  "windowMaximized": true
 }
