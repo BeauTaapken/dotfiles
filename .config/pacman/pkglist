@@ -20,6 +20,7 @@ cuda
 dbeaver
 dmidecode
 docker
+docker-buildx
 docker-compose
 dotnet-runtime
 dotnet-sdk
@@ -170,6 +171,7 @@ tesseract-data-nld
 tflint
 thunderbird
 timeshift
+tree-sitter-cli
 unrar
 v4l2loopback-dkms
 vdpauinfo
