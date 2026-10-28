@@ -253,6 +253,17 @@ hl.window_rule({
 	content = "video",
 })
 
+hl.window_rule({
+	match = {
+		class = "^(.*JellyfinDesktop)$",
+		title = "^(Jellyfin.*)$",
+	},
+	workspace = "24 silent",
+	--TODO: fix this sizing to be monitor size dependent, somehow make it always be 16:9 by default or something?
+	size = { 2459, 1383 },
+	content = "video",
+})
+
 -- Open steam games on "main" display even when not focussed
 hl.window_rule({
 	match = {
